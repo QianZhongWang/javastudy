@@ -1,4 +1,4 @@
 <!--主页-->
 <view>
-    <image src="" class="top-theme"></image>
+    <image src="{{themeA.entrance_img}}" class="top-theme"></image>
 </view>
