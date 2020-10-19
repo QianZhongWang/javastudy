@@ -1,12 +1,12 @@
 <view class="container">
-    <l-grid>
-        <block wx:for="{{}}" wx:key="index">
-            <l-grid-item>
-                <view>
-                    <image src="{{}}"></image>
-                    <text>{{}}</text>
-                </view>
-            </l-grid-item>
-        </block>
-    </l-grid>
+  <l-grid l-class="inner-container">
+    <block wx:for="{{grid}}" wx:key="index">
+      <l-grid-item key="{{index}}" slot="{{index}}">
+        <view class="grid-item">
+          <image class="img" src="{{item.img}}"></image>
+          <text class="text">{{item.title}}</text>
+        </view>
+      </l-grid-item>
+    </block>
+  </l-grid>
 </view>
