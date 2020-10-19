@@ -3,7 +3,7 @@
 
   <image src="{{themeA.entrance_img}}" class="top-theme"></image>
 
-  <swiper class="swiper" indicator-dots indicator-active-color="#157658" autoplay circular>
+  <swiper class="swiper" indicator-dots indicator-active-color="#155876" autoplay circular>
     <block wx:for="{{bannerB.items}}" wx:key="index">
       <swiper-item>
         <image class="swiper" src="{{item.img}}"></image>
@@ -11,5 +11,6 @@
     </block>
   </swiper>
 
-  <Q-catergory-grid grid="{{grid}}"></Q-catergory-grid>
+  <s-catergory-grid grid="{{grid}}"></s-catergory-grid>
+  <image class="activity" src="{{activityD.entrance_img}}"></image>
 </view>
