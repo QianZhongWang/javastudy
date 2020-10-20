@@ -5,7 +5,7 @@ Component({
    */
   properties: {
     theme: Object,
-    spu_list: Array
+    spuList: Array
   },
 
   /**

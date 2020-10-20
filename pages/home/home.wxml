@@ -13,4 +13,5 @@
 
   <s-catergory-grid grid="{{grid}}"></s-catergory-grid>
   <image class="activity" src="{{activityD.entrance_img}}"></image>
+  <s-spu-scroll wx:if="{{themeE.online}}" theme="{{themeE}}" spu-list="{{themeESpu}}"></s-spu-scroll>
 </view>

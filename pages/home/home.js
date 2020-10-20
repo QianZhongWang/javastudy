@@ -13,7 +13,7 @@ Page({
   data: {
     themeA: null,
     themeE: null,
-
+    themeESpu: [],
     bannerB: null,
     grid: [],
     activityD: null
@@ -35,17 +35,18 @@ Page({
     await theme.getThemes()
     const themeA = await theme.getHomeLocationA()
     const themeE = await theme.getHomeLocationE()
+    let themeESpu = []
     if (themeE.online) {
       const data = await Theme.getHomeLocationESpu()
       if (data) {
-        data.spu_list.slice(0, 8)
+        themeESpu = data.spu_list.slice(0, 8)
       }
     }
 
     this.setData({
       themeA,
       themeE,
-
+      themeESpu,
       bannerB,
       grid,
       activityD
